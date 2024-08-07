@@ -54,13 +54,14 @@ void quicksort(int arr[], int low, int high)
 	if (low < high)
 	{
 		int pi = partition(arr, low, high);
-		quicksort(arr, low, pi - 1);
-		quicksort(arr, pi + 1, high);
+			quicksort(arr, low, pi - 1);
+			quicksort(arr, pi + 1, high);
 	}
 }
 
 /**
- * quick_sort - Sorts an array of integers in ascending order using the Quick sort algorithm
+ * quick_sort - Sorts an array of integers
+ *              in ascending order using the Quick sort algorithm
  * @array: The array to be sorted
  * @size: The size of the array
  */
@@ -72,7 +73,7 @@ void quick_sort(int *array, size_t size)
 }
 
 /**
- * print_array - Prints an array of integers
+ * print_array_1 - Prints an array of integers
  * @array: The array to be printed
  * @size: Number of elements in the array
  */
