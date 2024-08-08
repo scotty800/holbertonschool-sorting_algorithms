@@ -88,7 +88,9 @@ void quick_sort(int *array, size_t size)
 
 void print_array1(const int *array, size_t size)
 {
-	for (size_t i = 0; i < size; i++)
+	size_t i;
+
+	for (i = 0; i < size; i++)
 	{
 		if (i > 0)
 			printf(", ");
