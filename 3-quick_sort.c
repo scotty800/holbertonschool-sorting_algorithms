@@ -14,7 +14,7 @@ void swap(int *a, int *b)
 }
 
 /**
- * partition - Partitions the array using the Lomuto partition scheme
+ * lomutoPartition - Partitions the array using the Lomuto partition scheme
  * @array: The array to be partitioned
  * @low: The starting index of the partition
  * @high: The ending index of the partition
@@ -79,23 +79,3 @@ void quick_sort(int *array, size_t size)
 		return;
 	quick_sort_rec(array, 0, size - 1, size);
 }
-
-/**
- * print_array1 - Prints an array of integers
- * @array: The array to be printed
- * @size: Number of elements in @array
- */
-
-void print_array1(const int *array, size_t size)
-{
-	size_t i;
-
-	for (i = 0; i < size; i++)
-	{
-		if (i > 0)
-			printf(", ");
-		printf("%d", array[i]);
-	}
-	printf("\n");
-}
-
