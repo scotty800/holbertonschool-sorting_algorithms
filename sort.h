@@ -1,9 +1,8 @@
 #ifndef _SORT_H_
 #define _SORT_H_
 
-#include <stdio.h>
-#include <stdlib.h>
 #include <stddef.h>
+
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -11,6 +10,7 @@
  * @prev: Pointer to the previous element of the list
  * @next: Pointer to the next element of the list
  */
+
 typedef struct listint_s
 {
 	const int n;
@@ -27,4 +27,5 @@ void quick_sort(int *array, size_t size);
 void print_array1(const int *array, size_t size);
 void quick_sort_rec(int *array, int low, int high, size_t size);
 void swap(int *a, int *b);
+
 #endif

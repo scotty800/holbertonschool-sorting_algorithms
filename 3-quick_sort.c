@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "sort.h"
 
 /**
@@ -85,7 +83,7 @@ void quick_sort(int *array, size_t size)
  * @array: The array to be printed
  * @size: Number of elements in @array
  */
-void print_array1(const int *array, size_t size)
+/*void print_array1(const int *array, size_t size)
 {
 	for (size_t i = 0; i < size; i++)
 	{
@@ -94,5 +92,5 @@ void print_array1(const int *array, size_t size)
 		printf("%d", array[i]);
 	}
 	printf("\n");
-}
+}*/
 
